@@ -1,0 +1,36 @@
+/*
+    Element selector :- select element by using elements name
+    Id selector (#):- Id name use element selection
+    class selector (.):- class name use element selection
+    attribute selector :- by using attribute value
+
+    id > class > element > attribute
+*/
+
+
+/* p{
+    color: red;
+}
+
+#id1{
+    color: green;
+}
+
+.cls1{
+    color: blue;
+}
+
+h1[title="head"]{
+    color: yellow;
+} */
+
+/*
+    Group selector :- to select multiple element by using comma(,) operator
+
+*/
+
+/* .cls1,#cls2,h1{
+    color: red;
+} */
+
+
