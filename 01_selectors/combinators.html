@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selectors</title>
+</head>
+<style>
+    /* descandant selector (space) */
+    /* .container p{
+        color: yellow;
+    } */
+
+    /* child selector */
+    /* .container > p {
+        color: blue;
+    } */
+
+    /* next sibling selector */
+    /* .container + p{
+        color: aqua;
+    } */
+
+    /* subsequence sibling selector */
+    /* .container ~ p{
+        color: blueviolet;
+    } */
+
+    /* universal selector  */
+    /* *{
+        border: 2px solid red;
+    } */
+</style>
+
+<body style="background-color: #212121; color: aliceblue;">
+    <div class="container">
+        <p>text paragraph #1</p>
+        <p>text paragraph #2</p>
+        <div>
+            <p>text paragraph #3</p>
+        </div>
+    </div>
+
+    <p>text paragraph #4</p>
+    <p>text paragraph #5</p>
+</body>
+
+</html>
