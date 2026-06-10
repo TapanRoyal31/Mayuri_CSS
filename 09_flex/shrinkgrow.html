@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #212121;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      height: 90%;
+      width: 720px;
+      border: 2px solid red;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .box {
+      /* height: 100px;
+      aspect-ratio: 1 / 1; */
+      background-color: aqua;
+      flex-shrink: 1;
+      flex-grow: 1;
+    }
+    .shrink {
+      flex-shrink: 5;
+    }
+    .grow {
+      flex-grow: 5;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="box grow">01</div>
+      <div class="box">02</div>
+      <div class="box">03</div>
+      <div class="box">04</div>
+      <div class="box shrink">05</div>
+    </div>
+  </body>
+</html>

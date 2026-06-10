@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #212121;
+      color: #fff;
+    }
+
+    div,
+    span {
+      border: 2px solid red;
+      height: 200px;
+      width: 200px;
+    }
+
+    div {
+      display: block; /*height and width apply*/
+      /* new elemeent shuold in new line */
+    }
+    span {
+      display: inline; /*don't apply height and width*/
+      /* new elemeent take place on side of span*/
+    }
+    div,
+    span {
+      display: inline-block; /*height and width apply*/
+        /* new elemeent take place on side of all elements */
+    }
+  </style>
+  <body>
+    <div>div element</div>
+    <span>span element</span>
+  </body>
+</html>
