@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #212121;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container{
+        display: grid;
+        height: 500px;
+        gap: 10px;
+        width: 800px;
+        border: 1px solid red;
+        grid-template-columns: 100px 200px 1fr;
+        grid-template-rows: 100px 100px 1fr;
+    }
+    .box{
+        background-color: aqua;
+        color: black;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="box">01</div>
+      <div class="box">02</div>
+      <div class="box">03</div>
+      <div class="box">04</div>
+      <div class="box">05</div>
+      <div class="box">06</div>
+      <div class="box">07</div>
+      <div class="box">08</div>
+      <div class="box">09</div>
+    </div>
+  </body>
+</html>
