@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #212121;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .box{
+        background-color: white;
+        height: 250px;
+        width: 250px;
+        /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+        animation-name: colorchange;
+        animation-duration: 3s;
+        animation-timing-function: ease;
+        /* animation-delay: 2s; */
+        animation-iteration-count: 1;
+        animation-direction: normal;
+        animation-fill-mode: both;
+    }
+
+    /* .box:hover{
+        animation-play-state: paused;
+    } */
+
+
+    /* @keyframes rotate {
+        from{
+           transform: rotate(0deg); 
+           background-color: white;
+        }
+        to{
+            background-color: aqua;
+            transform: rotate(360deg); 
+        }
+    } */
+
+     @keyframes colorchange {
+        0%{
+            background-color: lightblue;
+            rotate: 0deg;   
+            border-radius: 0;
+        }
+        20%{
+            background-color: lightcoral;
+        }
+        40%{
+            background-color: lightcyan;
+        }
+        60%{
+            background-color: lightgreen;
+        }
+        80%{
+            background-color: lightgrey;
+        }
+        100%{
+            background-color: lightsalmon;
+            rotate: 360deg;
+            border-radius: 50%;
+        }
+     }
+</style>
+<body>
+    <div class="box">
+    </div>
+</body>
+</html>

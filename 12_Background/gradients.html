@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #212121;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .box {
+      height: 250px;
+      width: 250px;
+      border: 2px solid red;
+      background-image: /* linear-gradient(red 10%,blue 20% 30%,green 40%) */
+      /* repeating-linear-gradient(red 0% 10%,green 10% 20%,blue 20% 30%) */
+      /* radial-gradient(circle at center,red 0% 10%,orangered 20%); */
+      /* repeating-radial-gradient(red 0% 10%,orangered 10% 20%) */
+      /* conic-gradient(red 0deg 45deg,aqua 60deg 120deg,blue 145deg 180deg,green 200deg 280deg,red) */ 
+      cover;
+      background: linear-gradient(
+        90deg,
+        rgba(2, 0, 36, 1) 0%,
+        rgba(9, 9, 121, 1) 0%,
+        rgba(0, 212, 255, 1) 62%
+      );
+    }
+  </style>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>
